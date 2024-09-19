@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavitha Bakery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">KAVITHA BAKERY</a>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <div class="jumbotron text-center text-white parallax">
+        <h1 class="animate__animated animate__fadeInDown">
+            <span style="color: #ff6347;">W</span><span style="color: #ff4500;">e</span><span style="color: #ffa500;">l</span><span style="color: #32cd32;">c</span><span style="color: #1e90ff;">o</span><span style="color: #ff69b4;">m</span><span style="color: #ba55d3;">e</span>
+            <span style="color: white;"> </span>
+            <span style="color: #ff6347;">t</span><span style="color: #ff4500;">o</span>
+            <span style="color: white;"> </span>
+            <span style="color: #32cd32;">K</span><span style="color: #ff69b4;">a</span><span style="color: #ba55d3;">v</span><span style="color: #1e90ff;">i</span><span style="color: #ffa500;">t</span><span style="color: #ff6347;">h</span><span style="color: #32cd32;">a</span>
+            <span style="color: white;"> </span>
+            <span style="color: #ff69b4;">B</span><span style="color: #ba55d3;">a</span><span style="color: #1e90ff;">k</span><span style="color: #ffa500;">e</span><span style="color: #ff6347;">r</span><span style="color: #32cd32;">y</span>
+        </h1>
+        
+        
+       <h3> <p style="color: #ba55d3;">Your sweet corner for delicious cakes and more!</p></h3>
+       <center> <a href="#cake-flavors" class="btn btn-lg btn-warning mt-3" style="width: 50%; ">Explore Our Cakes</a></center>
+    </div>
+
+    <!-- Cake Categories Buttons -->
+    <div class="container text-center my-5">
+        <h2 class="mb-4">Choose Your Cake Type</h2>
+        <button class="btn btn-primary mr-3" onclick="showCoolCakes()">Cool Cakes</button>
+        <button class="btn btn-success" onclick="showNormalCakes()">Normal Cakes</button>
+    </div>
+
+    <!-- Cake Flavors Section -->
+    <div class="container" id="cake-flavors">
+        <h2 class="text-center" id="flavor-heading">Cakes</h2>
+        <div class="row" id="cake-list">
+            <!-- Dynamic cake content will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Modal for Cake Details -->
+    <div class="modal fade" id="cakeModal" tabindex="-1" aria-labelledby="cakeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cakeModalLabel">Cake Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-img" class="img-fluid " alt="Cake">
+                    <h4 id="modal-title"></h4>
+                    <p id="modal-description"></p>
+                    <p><strong>Price: <span id="modal-price"></span>/1kg</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-4">
+        <p>&copy; 2024 Kavitha Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
